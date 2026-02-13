@@ -26,9 +26,9 @@ STEP2_Y = 0.85
 STEP2_W = 0.18
 STEP2_H = 0.11
 
-STEP3_X = 0.80
+STEP3_X = 0.81
 STEP3_Y = 0.37
-STEP3_W = 0.1
+STEP3_W = 0.092
 STEP3_H = 0.05
 
 ARROW_OFFSET_X = -0.13
@@ -36,10 +36,10 @@ ARROW_OFFSET_Y = -0.14
 ARROW_THICKNESS = 6
 ARROW_TIP_LENGTH = 0.25
 
-STEP4_X = 0.0
-STEP4_Y = 0.0
-STEP4_W = 0.0
-STEP4_H = 0.0
+STEP4_X = 0.795
+STEP4_Y = 0.44
+STEP4_W = 0.1
+STEP4_H = 0.05
 #percent to coords
 def percent_box(x_p, y_p, w_p, h_p):
     x1 = int(SCREEN_WIDTH * x_p)
