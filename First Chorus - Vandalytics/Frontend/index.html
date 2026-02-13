@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vandalytics - Optimize Your Game</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f1117;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
+    color: #ff4655;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8%;
+    background: radial-gradient(circle at 20% 40%, #ff465520 0%, transparent 40%),
+                radial-gradient(circle at 80% 60%, #00ffe520 0%, transparent 40%);
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    max-width: 700px;
+}
+
+.hero span {
+    color: #ff4655;
+}
+
+.hero p {
+    margin-top: 20px;
+    max-width: 600px;
+    font-size: 1.1rem;
+    color: #bbb;
+}
+
+.hero button {
+    margin-top: 30px;
+    padding: 15px 35px;
+    border: none;
+    background: #ff4655;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #ff6b78;
+}
+
+.features {
+    padding: 100px 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.card {
+    background: #181c24;
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #1f2530;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #ff4655;
+}
+
+.card p {
+    color: #aaa;
+}
+
+.cta {
+    text-align: center;
+    padding: 100px 8%;
+    background: #12151c;
+}
+#example {
+    display: block;
+    margin: 40px auto;
+    max-width: 80%;
+    border-radius: 12px;
+}
+.cta h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+}
+
+.cta button {
+    margin-top: 25px;
+    padding: 15px 40px;
+    background: #00ffe5;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    transition: 0.3s;
+}
+.cta button:hover {
+    background: #00c2aa;
+}
+
+footer {
+    padding: 40px 8%;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+}
+</style>
+<link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Vandalytics Logo" style="width: 55px;height:55px;margin-right: -730px;margin-left: -70px;" class="logo">
+    <div class="logo">Vandalytics</div>
+    <nav>
+        <a href="#" onclick="feature()">Features</a>
+        <a href="#" onclick="howitworks()">How It Works</a>
+        <a href="#" onclick="login()">Login</a>
+    </nav>
+</header>
+<script>
+    function feature() {
+        document.querySelector('.features').scrollIntoView({ behavior: 'smooth' });
+    }
+    function login() {
+        ahref = "login.html";
+        window.open(ahref, '_blank');
+    }
+    function howitworks() {
+        document.querySelector('.how-it-works').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+<section class="hero">
+    <h1>Dominate Valorant with <span>AI Optimization</span></h1>
+    <p>
+        Vandalytics analyzes your posture, system performance, and in-game behavior
+        to optimize your settings and coach you in real-time.
+        Play smarter. React faster. Win more.
+    </p>
+    <button>Get Early Access</button>
+</section>
+
+<section class="features">
+    <div class="card">
+        <h3>🎯 Posture Coaching</h3>
+        <p>AI-powered webcam tracking ensures you maintain peak ergonomic positioning during intense matches.</p>
+    </div>
+
+    <div class="card">
+        <h3>⚡ Performance Optimization</h3>
+        <p>Automatically tweaks system settings for maximum FPS and minimal latency.</p>
+    </div>
+
+    <div class="card">
+        <h3>📊 Gameplay Analytics</h3>
+        <p>Analyzes aim patterns, reaction times, and habits to suggest improvements.</p>
+    </div>
+
+    <div class="card">
+        <h3>🧠 Real-Time Coaching</h3>
+        <p>Live feedback while you play: positioning tips, posture corrections, and performance alerts.</p>
+    </div>
+</section>
+<video controls autoplay muted loop id="example">
+    <source src="omen.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+
+</video>
+<section class="how-it-works">
+    <center>
+    <h2 style="font-family: 'Orbitron', sans-serif;font-size: 40px;">How It Works</h2>
+    <br><br>
+    <p id="how-it-works-text">
+        Vandalytics uses advanced AI models to analyze your webcam feed and system performance in real-time.
+        It provides actionable insights and adjustments to help you perform at your best.
+    </p>
+    <style>
+        #how-it-works-text {
+           margin-top: 20px;
+           max-width: 600px;
+           font-size: 1.1rem;
+           color: #bbb;
+           font-size: 20px;
+        }
+    </style>
+    </center>
+</section>
+
+<footer style="background-color: #161a21;margin-top: 20px">
+    © 2026 Vandalytics. Built for competitive gamers.
+</footer>
+
+</body>
+</html>
